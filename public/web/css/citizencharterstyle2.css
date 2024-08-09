@@ -1,0 +1,313 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 20vh; 
+  background-color: #EAEAEA;
+  background-size: cover;
+  background-position: center;
+}
+
+.logo {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  bottom: 0;
+  left: 0;
+  margin-bottom: 5px; 
+}
+
+.material-icons {
+  font-size: 34px; 
+  color: #ffffff; 
+  margin-right: -100px;
+}
+
+.deped-logo {
+  width: 110px;
+  height: 59px;
+  margin-bottom: -14vh;
+  margin-left: 10px;
+}
+
+.qr-code {
+  width: 60px;
+  margin-bottom: -3vh;
+}
+
+.main-logo {
+  width: 80px; 
+  margin-bottom: 1vh;
+  margin-left: -39px;
+}
+:root {
+  --bs-gutter-x: -3.3rem;
+}
+
+.container {
+  width: 1000px; /* increased width */
+  height: 80vh; /* increased height */
+  margin: 10px auto; /* adjusted margin */
+  flex-direction: column;
+  display: flex;
+  font-size: 13px;
+}
+
+.container-fluid-custom{
+  padding-left: 100%;
+  padding-right: 100%;
+}
+
+
+.text-right {
+  text-align: right;
+}
+.text-right #time {
+  text-align: left; /* or any other style you want for left alignment */
+  margin-left: 0; /* Adjust margin-left as needed */
+  margin-bottom: -4px;
+}
+
+.blue-header {
+  background-color: #0f76aa; 
+  color: #FFFFFF; 
+  padding: 4px; /* increased padding */
+  font-size: 24px; /* increased font-size */
+  text-align: left;
+  width: 114%;
+  border-top-left-radius: 7px; 
+  border-top-right-radius: 7px; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: -74px;
+ 
+}
+.kiosk-title {
+  text-align: left; /* Align text to the left */
+  margin-left: 34px; /* Adjust margin-left as needed */
+}
+
+.white-container {
+  background-color: #EAEAEA; 
+  padding: 4px; /* increased padding */
+  flex-direction: column;
+  width: 114%;
+  height: 88%;
+  border-bottom-left-radius: 15px; 
+  border-bottom-right-radius: 15px; 
+  justify-content: space-between;
+  align-items: center;
+  margin-left: -74px;
+  
+}
+
+
+.p {
+  color: white;
+}
+
+.video-container {
+  position: relative; /* Ensure the container is relatively positioned */
+  text-align: center; /* Center-align the video horizontally */
+}
+
+
+.iframe-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 409px;
+  height: 410px;
+  background-color: #fff;
+  z-index: 0;
+  display: none;
+}
+
+#videoPlayer {
+  position: absolute; /* Position the video absolutely within the container */
+  left: 11%; /* Move the video horizontally to the right by 50% of its container width */
+  transform: translateX(-30%); /* Center the video horizontally */
+  top: 10%; /* Move the video vertically to the bottom by 50% of its container height */
+  transform: translateY(-26%); /* Center the video vertically */
+}
+
+
+
+
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+
+.scroll-container {
+  overflow-y: auto;
+  height: 450px; /* adjust the height to your needs */
+  width: 380px; /* adjust the width to your needs */
+  padding: 11px;
+  max-height: 510px;
+  margin-top: 20px; /* Adjust margin-top to move the content down */
+}
+
+.scroll-container::-webkit-scrollbar {
+  width: 10px; /* width of the scroll button */
+  height: 10px; /* height of the scroll button */
+  background-color: #cccccc; /* light gray background of the scroll button */
+  border-radius: 10px;
+  margin-right: -250px;
+  margin-top: 20px;
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+  background-color: #007bff; /* dark gray color of the scroll button */
+  border-radius: 10px; /* rounded corners of the scroll button */
+  margin-right: -47px;
+  margin-top: 20px;
+}
+
+.scroll-container::-webkit-scrollbar-thumb:hover {
+  background-color: #007bff; /* darker gray color of the scroll button on hover */
+  margin-right: -50px;
+  margin-top: 20px;
+}
+
+.image-button-container {
+  display: grid;
+  flex-direction: column;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-right: 0px;
+  margin: 20px; 
+}
+
+.image-button {
+  margin-bottom: 10px;
+  width: 253px; 
+  height: 80px; 
+  border: none;
+  border-radius: 5px;
+  background-size: cover;
+  background-position: center;
+  margin-right: -29px;
+  cursor: pointer;
+  
+}
+.pdf-container {
+  position: absolute;
+  width: 100%;
+  height: 2;
+  padding-bottom: 68.25%; /* 16:9 aspect ratio */
+  overflow: auto;
+  background-color: white;
+  display: none; /* Initially hidden */
+}
+
+.pdf-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+
+
+.card {
+  border-radius: 5px;
+  flex-direction: column;
+  margin-bottom: 10px; 
+  margin-left: -20px;
+  margin-right: 20px;
+}
+
+.card-header {
+  padding: 5px;  
+  border-radius: 5px 5px 0 0;
+}
+
+
+.news-and-articles, .upcoming-events {
+  background-color: #007bff;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: white;
+  padding: 4px; 
+  border-radius: 5px 5px 0 0;
+  font-weight: bold;
+}
+
+.card-body {
+  padding: 10px; 
+  background-color: white;
+}
+.custom-text {
+  margin-bottom: 0;
+  color: #007bff;
+}
+.custom-text span {
+  color: #000000; /* black color */
+}
+
+
+footer {
+  background-color: #ffffff;
+  color: #295cbb;
+  text-align: right;
+  padding: 5px; 
+  position: fixed;
+  bottom: 0;
+  left:0;
+  width: 100%;
+}
+
+footer p {
+  margin: 0;
+  font-size: 14px;
+
+}
+.col-md-12 {
+  position: relative; /* Ensure the container has relative positioning */
+}
+
+.col-md-12 p {
+  position: relative; /* Set the <p> element to relative positioning */
+  top: -15px; /* Adjust this value to move the element up as needed */
+  margin-right: 10px;
+}
+.feedback-button {
+  background-color: #007bff; /* button background color */
+  color: white; /* button text color */
+  border: none; /* remove default border */
+  border-radius: 9px; /* rounded corners */
+  padding: 1px 3; /* button padding */
+  font-size: 15px; /* button text size */
+  cursor: pointer; /* pointer cursor on hover */
+  margin-left: 10px; /* space between QR code and button */
+  margin-bottom: -3vh;
+}
+
+.feedback-button:hover {
+  background-color: #0056b3; /* darker shade on hover */
+}
+
+
+
+/* Responsive adjustments */
+@media (max-width: 1250px) {
+  .container {
+      margin-bottom: 35px;
+  }
+  .white-container {
+      padding: 5px;
+  }
+}
